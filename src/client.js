@@ -493,7 +493,7 @@
     // Get Flash Version.  Return a string containing the Flash Version.
     getFlashVersion: function() {
       if (this.isFlash()) {
-        objPlayerVersion = swfobject.getFlashPlayerVersion();
+        var objPlayerVersion = swfobject.getFlashPlayerVersion();
         return objPlayerVersion.major + "." + objPlayerVersion.minor + "." + objPlayerVersion.release;
       }
       return "";
